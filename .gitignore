@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -23,3 +24,8 @@ dist-ssr
 *.sln
 *.sw?
 .env
+=======
+.env
+.env.local
+.env.production
+>>>>>>> 647dd304d47f589d26c57911044e94a60d91da24
