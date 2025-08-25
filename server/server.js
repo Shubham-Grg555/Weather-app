@@ -4,7 +4,9 @@ const coordsRouter = require('./routes/coords.route.js');
 const apiCallsInfoRouter = require('./routes/apiCallsInfo.route.js');
 const checkApiCallLimit = require('./middleware/checkApiCallLimit.middleware.js');
 const cors = require('cors');
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 const app = express();
 const port = process.env.PORT || 8000;
 const connectionString = process.env.CONNECTION_STRING;
