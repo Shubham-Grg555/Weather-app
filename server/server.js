@@ -12,7 +12,7 @@ const port = process.env.PORT || 8000;
 const connectionString = process.env.CONNECTION_STRING;
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://weather-app-2lcp.onrender.com",
   methods: ["GET", "POST", "PUT"],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
